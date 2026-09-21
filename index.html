@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Water Quest</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="game-container">
+
+    <!-- Game Title -->
+    <header>
+      <h1>Water Quest</h1>
+      <p>Collect water to help bring clean water to communities!</p>
+    </header>
+
+    <!-- Score and Timer -->
+    <section class="game-info">
+
+      <div>
+        <span>Score</span>
+        <strong id="score">0</strong>
+      </div>
+
+      <div>
+        <span>Time</span>
+        <strong id="timer">30</strong>
+      </div>
+
+    </section>
+
+    <!-- Game Board -->
+    <section id="game-board">
+
+      <!-- Start Screen -->
+      <div id="start-message">
+        <h2>Ready to Play?</h2>
+        <p>
+          Click the yellow water can every time it appears.
+          Collect as many as you can before time runs out!
+        </p>
+
+        <button id="start-button">
+          Start Game
+        </button>
+      </div>
+
+      <!-- Clickable Water Can -->
+      <button id="water-can" aria-label="Collect water">
+        💧
+      </button>
+
+    </section>
+
+    <!-- Player Feedback -->
+    <p id="feedback">
+      Click Start Game to begin!
+    </p>
+
+    <!-- Branding -->
+    <footer>
+      <p>Inspired by charity: water</p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
